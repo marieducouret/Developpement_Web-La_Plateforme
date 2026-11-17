@@ -4,63 +4,78 @@
     <meta charset="UTF-8"><!--Cette fonction sert à intégrer tous les caractères, comme les accents etc. Ca permet d'éviter les problèmes d'affichage-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--width=device-width : la largeur du navigateur s'adapte à la largeur réelle|initial-scale=1.0 : c'est le zoom initial = 100% -->
     <meta name="description" content="Recherche alternance en cybersécurité, beaucoup d'expérience en entreprise">
+    <link rel="stylesheet" href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\style-cv.css"><!--Link permet d'intégrer le format CSS au format html-->
+
     <title>Marie DUCOURET - CV</title>
 </head>
-<header><h1>Marie DUCOURET - CV</h1></header>
 <body>
-    <ul><li>06 04 50 31 73</li><!--La balise ul permet de mettre des points devnat chaque lignes de liste-->
-    <li>Saint Cannat - 13760</li>
-    <li>marieducouret6@gmail.com</li>
-    <li>Permis B</li></ul>
-    <section>
-        <h2>Étudiante en Bachelor IT | Orientation Cybersécurité</h2>
-        <h2>Recherche d'alternance en cybersécurité</h2>
-    </section>
-    <section>
-        <h2>Profil</h2>
-        <p>
-Après 10 années d'expérience dans le secteur de l'optique, dont plusieurs à des postes de direction, j'ai choisi d'entreprendre une reconversion professionnelle dans l'informatique.
-        <br/>Actuellement étudiante en première année de Bachelor IT à La Plateforme (Marseille), je développe mes compétences techniques avec un intérêt particulier pour la cybersécurité, les systèmes et les réseaux.
-    <br/>Rigoureuse, curieuse et dotée d'une solide expérience professionnelle, je souhaite intégrer une entreprise en alternance afin de participer à des projets concrets et développer mon expertise en sécurité informatique.
-</p>
-    </section>
-    <section>
-        <h2>Expériences professionnelles</h2>
-        <p><li>09/2025 – 09/2026  ·  Outly, Miramas  — Opticienne adjointe</li><!--Les balises li permettent de lister les éléments-->
-<li>09/2024 – 08/2025  ·  Krys, Saint-Rémy-de-Provence — Opticienne directrice</li>
-<li>03/2023 – 09/2024  ·  Krys, Cavaillon — Opticienne diplômée</li>
-<li>05/2022 – 03/2023  ·  Générale d’Optique, Fos-sur-Mer — Opticienne directrice</li>
-<li>01/2021 – 05/2022  ·  Grand Optical, Marignane — Opticienne diplômée</li>
-<li>12/2019 – 01/2021  ·  Krys, Martigues — Opticienne diplômée</li>
-<li>05/2019 – 12/2019  ·  Krys, Perpignan — Opticienne diplômée</li>
-<li>07/2016 – 05/2019  ·  Optical Center, Istres — Opticienne diplômée</li>
-        </p>
-    </section>
-    <section>
+    <div class="Gauche"><!--Faire une division va me permettre de séparer avec le css les 2 cases de sections-->
+        <section class="Nom">
+            <h1>Marie DUCOURET</h1>
+        </section>
+        <section class="Description"><!--C'est important de nommer le nom des sections pour différencier lors du format css-->
+            <h2>Étudiante en Bachelor IT | Orientation Cybersécurité</h2>
+            <h2>Recherche d'alternance en cybersécurité</h2>
+        </section>
+        <section class="Profil">
+            <h2>Profil</h2>
+            <p>Après 10 années d'expérience dans le secteur de l'optique, dont plusieurs à des postes de direction, j'ai choisi d'entreprendre une reconversion professionnelle dans l'informatique.
+            <br/>Actuellement étudiante en première année de Bachelor IT à La Plateforme (Marseille), je développe mes compétences techniques avec un intérêt particulier pour la cybersécurité, les systèmes et les réseaux.
+            <br/>Rigoureuse, curieuse et dotée d'une solide expérience professionnelle, je souhaite intégrer une entreprise en alternance afin de participer à des projets concrets et développer mon expertise en sécurité informatique.
+            </p>
+        </section>
+        <section class="Experiences">
+            <h2>Expériences professionnelles</h2>
+            <ul><li>09/2025 – 09/2026  ·  Outly, Miramas  — Opticienne adjointe</li><!--Les balises li permettent de lister les éléments-->
+            <li>09/2024 – 08/2025  ·  Krys, Saint-Rémy-de-Provence — Opticienne directrice</li>
+            <li>03/2023 – 09/2024  ·  Krys, Cavaillon — Opticienne diplômée</li>
+            <li>05/2022 – 03/2023  ·  Générale d’Optique, Fos-sur-Mer — Opticienne directrice</li>
+            <li>01/2021 – 05/2022  ·  Grand Optical, Marignane — Opticienne diplômée</li>
+            <li>12/2019 – 01/2021  ·  Krys, Martigues — Opticienne diplômée</li>
+            <li>05/2019 – 12/2019  ·  Krys, Perpignan — Opticienne diplômée</li>
+            <li>07/2016 – 05/2019  ·  Optical Center, Istres — Opticienne diplômée</li>
+            </ul>
+        </section>
+        <section class="Telechargement">
+            <a href="C:\Users\Marie-D\Documents\Perso\CV_Marie_DUCOURET.pdf" download="CV_Marie_DUCOURET.pdf">CV en PDF</a>
+        </section>
+        <footer>
+            <a href="https://github.com/marieducouret">Github</a><!--La balise a permet d'insérer des PDF, des liens-->
+        </footer>
+    </div>
+
+    <div class="Droite">
+        <section class="Coordonnee">
+            <h2>Coordonées</h2>
+            <ul><li>06 04 50 31 73</li><!--La balise ul permet de mettre des points devnat chaque lignes de liste-->
+            <li>Saint Cannat - 13760</li>
+            <li>marieducouret6@gmail.com</li>
+            <li>Permis B</li></ul>
+        </section>
+        <section class="Formations">
         <h2>Formations</h2>
-        <p><li>•2026 – 2029 : Bachelor IT – La Plateforme, Marseille <i>Première année en cours</i></li>
-            <li>•2017 – 2018 : Licence professionnelle Optométrie et Contactologie</li>
-            <li>•2015 – 2017 : BTS Opticien-Lunetier</li>
-            <li>•2012 - 2014 : Baccalauréat ST2S</li>
-</p>
-    </section>
-<section style="margin-bottom: 30px;"><h2>Compétences</h2><!--le style="margin-bottom: 30px;" permet de sauter des lignes après la section-->
-<h3>Programmation</h3>
-    <ul>
-    <li>Python</li><img src="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\logo-cv\python.png" alt="Logo python" width="40"/>
-    <li>Html 5</li><img src="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\logo-cv\html.png" alt="Logo html" width="40"/>
-</ul>
-<h3>Système d'exploitation</h3>
-<ul>
-    <li>Windows</li><img src="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\logo-cv\windows.png" alt="Logo windows" width="40"/>
-    <li>Linux</li><img src="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\logo-cv\linux.png" alt="Logo linux" width="40"/>
-</ul>
-</section>
-<section style="margin-bottom: 30px;">
-    <a href="C:\Users\Marie-D\Documents\Perso\CV_Marie_DUCOURET.pdf" download="CV_Marie_DUCOURET.pdf">CV en PDF</a>
-</section>
+        <ul><li>2026 – 2029 : Bachelor IT – La Plateforme, Marseille <i>Première année en cours</i></li>
+        <li>2017 – 2018 : Licence professionnelle Optométrie et Contactologie</li>
+        <li>2015 – 2017 : BTS Opticien-Lunetier</li>
+        <li>2012 - 2014 : Baccalauréat ST2S</li>
+        </ul>
+        </section>
+        <section class="Competences">
+            <h2>Compétences</h2><!--le style="margin-bottom: 30px;" permet de sauter des lignes après la section-->
+            <h3>Programmation</h3>
+            <ul>
+                <li>Python      <img src="https://images.icon-icons.com/2699/PNG/512/python_vertical_logo_icon_168039.png" alt="Logo python" width="25"/></li>
+                <li>Html 5      <img src="https://icones.pro/wp-content/uploads/2021/05/icone-html-orange.png" alt="Logo html" width="25"/></li>
+                <li>CSS 3       <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Logo CSS" width="25"/></li>
+            </ul>
+            <h3>Système d'exploitation</h3>
+            <ul>
+                <li>Windows     <img src="https://thumbs.dreamstime.com/b/logo-windows-isol%C3%A9-l-image-pr%C3%A9sente-le-compos%C3%A9-de-quatre-carr%C3%A9s-bleus-taille-%C3%A9gale-dispos%C3%A9s-dans-une-grille-ressemblant-%C3%A0-407575177.jpg" alt="Logo windows" width="25"/></li>
+                <li>Linux       <img src="https://images.icon-icons.com/2235/PNG/512/linux_os_logo_icon_134670.png" alt="Logo linux" width="25"/></li>
+            </ul>
+        </section>
+    </div>
+
 </body>
-<footer>
-    <a href="https://github.com/marieducouret">Github</a><!--La balise a permet d'insérer des PDF, des liens-->
-</footer>
+
 </html>
