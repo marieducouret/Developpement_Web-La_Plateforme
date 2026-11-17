@@ -1,0 +1,55 @@
+body{ 
+    background-image : url("https://www.golfe-saint-tropez-information.com/files/visitgolfe/webzine/sunrise-sunset/croix-valmer%20plage%20de%20gigaro%20coucher%20de%20soleil%202016%20%C2%A9e.bertrand%20droits%20reserves%20%2840%29.JPG"); 
+    background-size : cover;
+}
+/*Il faut bien "copier l'adresse de l'image" pour avoir le bon !url, et qu'il se termine pas une extension image (png ..) */
+
+h1{ color : rgb(0, 244, 252) }
+h2{ color :rgb(0, 244, 252) }
+
+.Gauche{
+    display: inline-block;
+    width : 700px;
+    vertical-align: top;
+} /*Display permet de séparer le block. Width est la largeur du block. vertical align permet d'aligner les cases, top permet de l'aligner en haut de page*/
+
+.Droite{
+    display: inline-block;
+    width : 350px;
+    vertical-align: top;
+}
+
+
+.Coordonnee{
+    color : white;
+    border : 1px solid rgb(0, 244, 252);
+}
+
+.Description{
+    color : white;
+    border : 1px solid rgb(0, 244, 252);
+}
+
+.Profil{
+    color : white;
+    border : 1px solid rgb(0, 244, 252);
+}
+
+.Experiences{
+    color : white;
+    border : 1px solid rgb(0, 244, 252);
+}
+
+.Formations{
+    color : white;
+    border : 1px solid rgb(0, 244, 252);
+}
+
+.Competences{
+    color : white;
+    border : 1px solid rgb(0, 244, 252);
+}
+
+.Telechargement{ background :rgb(0, 244, 252) }
+
+footer{ background :rgb(0, 244, 252) }
