@@ -1,3 +1,4 @@
+
 /*Commun*/ 
     * {box-sizing: border-box;}
 
@@ -51,6 +52,20 @@
             height: 145px;
             object-fit: cover; /* recadre sans déformer */}
 
+@media screen and (max-width: 430px){
+    .photos-acc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+    .photos-acc img{
+        flex: auto;
+        flex-direction: row;
+        max-width: 40%;
+        height: auto;
+        object-fit: cover;}}
+/*Permet la responsive de ces éléments lorsque la largeur de l'écran est entre 0 et 430px*/
+
         .services { 
             text-align : justify;
             display : grid;
@@ -71,7 +86,16 @@
             grid-column-start: 3;
             grid-column-end: 4;}
 
+@media screen and (max-width: 430px){
+  #service3{ 
+            grid-column-start: 1;
+            grid-column-end: 4;}
+            grid-row-start: 2;
+            grid-row-end: 3;}
+/*Permet la responsive de ces éléments lorsque la largeur de l'écran est entre 0 et 430px*/
+
 /*Entreprise*/
+* {box-sizing: border-box;}
         .header-ent{
             background-color: rgb(230, 170, 68);
             color : black;
@@ -118,6 +142,7 @@
             grid-row-end: 4;}
     
 /*Equipe*/
+* {box-sizing: border-box;}
         .header-eq{
             background-color: rgb(187, 117, 244);
             color : black;
@@ -186,7 +211,15 @@
             grid-row-start: 3;
             grid-row-end: 4;}
 
+@media screen and (max-width: 430px){
+  .presentation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}}
+/*Permet la responsive de ces éléments lorsque la largeur de l'écran est entre 0 et 430px*/
+
 /*Réalisations*/
+* {box-sizing: border-box;}
         .header-rea{grid-column: 1/4;
             background-color: rgb(16, 197, 247);
             color : black;
@@ -225,7 +258,15 @@
             border: 3px solid rgb(16, 197, 247);
             object-fit: cover;}
 
+@media screen and (max-width: 430px){
+  .photos-rea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}}
+/*Permet la responsive de ces éléments lorsque la largeur de l'écran est entre 0 et 430px*/
+
 /*Contact*/
+* {box-sizing: border-box;}
         .header-cont{
             background-color: rgb(150, 251, 129);
             color : black;
