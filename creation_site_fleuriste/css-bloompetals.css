@@ -1,0 +1,250 @@
+/*Commun*/ 
+    * {box-sizing: border-box;}
+
+    .Baniere{
+            display : flex;
+            font-family: fantasy;
+            flex-wrap: wrap;/* permet de passer à la ligne sur mobile */
+            justify-content: flex-start;
+            gap : 50px}
+
+/*Accueil*/
+        .header-acc{
+            background-color: rgb(252, 47, 47);
+            color : black;
+            display : flex;
+            flex-direction: row;/*Aligne à l'horizontal*/
+            padding:1% 1%}
+
+        #barre {margin-left: auto;} /*pousse la barre de recherche tout à droite */
+
+        .body-acc{
+            background-color: rgb(254, 201, 201);
+            padding:1% 1%;}
+        
+        #p-description{text-align: center;}
+
+        .foot-acc{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(228, 1, 1);
+            color: rgb(228, 1, 1);}
+
+        #h1-acc{
+            text-align: center;
+            font-family: cursive;
+            color: rgb(228, 1, 1);}
+        
+        .Description{text-align: center;}
+
+        .photos-acc {
+            display: flex;
+            gap: 12px; /* espace entre les photos */
+            width: 100%;
+            border : 2px solid white ;
+            padding : 1% 1%;
+            width: auto;}
+
+        .photos-acc img {
+            flex: 1; /* chaque photo prend une part égale de la largeur */
+            min-width: 0; /* évite le débordement horizontal */
+            height: 145px;
+            object-fit: cover; /* recadre sans déformer */}
+
+        .services { 
+            text-align : justify;
+            display : grid;
+            grid-template-columns: repeat(auto-fit, 1fr);/*Le navigateur place autant de colonnes que la largeur d'écran le permet.*/
+            grid-template-rows: auto;
+            gap : 30px;}
+
+        #titre{
+            grid-column-start: 1;
+            grid-column-end: 4;}
+            #service1{
+            grid-column-start: 1;
+            grid-column-end: 2;}
+            #service2{ 
+            grid-column-start: 2;
+            grid-column-end: 3;}
+            #service3{ 
+            grid-column-start: 3;
+            grid-column-end: 4;}
+
+/*Entreprise*/
+        .header-ent{
+            background-color: rgb(230, 170, 68);
+            color : black;
+            display : flex;
+            flex-direction: row;/*Aligne à l'horizontal*/
+            padding:1% 1%}
+
+        #foot-ent{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(230, 170, 68);
+            color: rgb(230, 170, 68);}
+
+        #h2-ent{
+            font-family: cursive;
+            color : rgb(250, 159, 0)}
+
+        .body-ent{
+            background-color: rgb(253, 226, 180);
+            padding:1% 1%;}
+
+        #h1-ent{
+            display: flex;
+            justify-content: center;
+            font-family: cursive;
+            color : rgb(228, 104, 2)}
+
+        .apropos {
+            display : grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100 px 150px 200px;
+            gap : 30px;}
+            .desc{ 
+            text-align : justify;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;}
+            .conclusion{
+            text-align : justify;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;}
+    
+/*Equipe*/
+        .header-eq{
+            background-color: rgb(187, 117, 244);
+            color : black;
+            display : flex;
+            flex-direction: row;/*Aligne à l'horizontal*/
+            padding:1% 1%}
+
+        #foot-eq{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(187, 117, 244);
+            color :rgb(187, 117, 244);}
+        
+        #p-eq{font-family: cursive;}
+
+        .body-eq{
+            background-color: rgb(233, 164, 248);
+            padding:1% 1%;
+            color: rgb(117, 22, 135);}
+
+        #h1-eq{
+            display: flex;
+            justify-content: center;
+            font-family: cursive;
+            color : rgb(132, 6, 132)}
+
+        .presentation{
+            display : grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap : 30px;
+            justify-items: center;
+            text-align: center;}
+
+        .presentation img {
+        flex: 1; /* chaque photo prend une part égale de la largeur */
+        min-width: 0; /* évite le débordement horizontal */
+        width: auto;
+        height: 145px;
+        object-fit: cover; /* recadre sans déformer */
+        border-radius: 3%; /*bord arrondis*/
+        border: 3px solid rgb(187, 117, 244);}
+            .resp{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;}
+            .compt{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;}
+            .acc{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;}
+            .fle{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;}
+            .ecoute{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;}
+
+/*Réalisations*/
+        .header-rea{grid-column: 1/4;
+            background-color: rgb(16, 197, 247);
+            color : black;
+            display : flex;
+            flex-direction: row;/*Aligne à l'horizontal*/
+            padding:1% 1%}
+
+        #foot-rea{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(16, 197, 247);
+            color: rgb(16, 197, 247);}
+
+        #h1-rea{ grid-column: 1/4;
+            font-family: cursive;
+            color:rgb(0, 140, 254);
+            text-align: center;}
+
+        .body-rea{
+            background-color: rgb(190, 245, 248);
+            padding:1% 1%;}
+  
+        .photos-rea{display: grid;
+            grid-template-columns:1fr 1fr 1fr ;
+            grid-template-rows: auto;
+            gap: 12px;
+            width: auto;
+            place-items: center;
+            padding:1% 1%;}
+
+        .photos-rea img {
+            grid: 1; 
+            min-width: 0; 
+            height: 145px;
+            border-radius: 3%;
+            border: 3px solid rgb(16, 197, 247);
+            object-fit: cover;}
+
+/*Contact*/
+        .header-cont{
+            background-color: rgb(150, 251, 129);
+            color : black;
+            display : flex;
+            flex-direction: row;/*Aligne à l'horizontal*/
+            padding:1% 1%}
+
+        .body-cont{
+            background-color:rgb(209, 254, 213);
+            padding: 1% 1%;}
+
+        #foot-cont{
+            width: 100%;
+            height: 10%;
+            background-color: rgb(150, 251, 129);
+            color: rgb(150, 251, 129);}
+
+        form{
+            background-size: cover;
+            text-align: center;
+            font-family: cursive;
+            gap: 30px;}

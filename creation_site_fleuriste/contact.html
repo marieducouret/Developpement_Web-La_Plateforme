@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\Jour3&4\css-bloompetals.css">
+    <title>Bloompetal - Contact</title>
+</head>
+<header class="header-cont">
+    <section class="Baniere">
+            <a href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\Jour3&4\index.html">Accueil</a>
+            <a href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\Jour3&4\entreprise.html">Entreprise</a>
+            <a href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\Jour3&4\equipe.html">Qui sommes nous?</a>
+            <a href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\Jour3&4\realisation.html">Réalisations</a>
+            <a href="C:\Users\Marie-D\Documents\lptf\projets\Runtrack-devweb\Jour3&4\contact.html">Contact</a>
+    </section>
+</header>
+<body class="body-cont">
+</br>
+
+<form action="/traitement" method="post"><!--Contient tout le formulaire-->
+    <label for="civilité">Choisissez une civilité :</label>
+    <select id="civilité" name="civilité"><!--Crée le menu déroulant-->
+        <option value="">-- Sélectionnez --</option><!--Definit chaque choix possible-->
+        <option value="Madame">Madame</option>
+        <option value="Monsieur">Monsieur</option>
+        <option value="Non binaire">Non binaire</option>
+    </select>
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><!--Crée un champs de saisie selon son type (email, password, text..)-->
+    </div>
+    <div>
+        <label for="prénom">Prénom :</label>
+        <input type="text" id="prénom" name="prénom" required>
+    </div>
+    <div>
+        <label for="adresse">Adresse postale :</label>
+        <input type="adresse" id="adresse" name="adresse" required>
+    </div>
+    <div>
+        <label for="checkbox">Veuillez cliquez sur ce bouton pour valider la politique de confidentialité</label>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+    </div>
+  <button type="submit">Envoyer</button><!--Déclenche l'envoie du formulaire-->
+
+</form>
+</body>
+<footer id="foot-cont">  
+    <p>----------</p>
+</footer>
+</html>
