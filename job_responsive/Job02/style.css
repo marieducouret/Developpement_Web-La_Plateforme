@@ -1,0 +1,26 @@
+body{background-color: #88c1d0;}
+.Baniere{  
+    display : flex;
+    font-family: fantasy;
+    justify-content: space-around;/*Espace sur toute la largeur*/
+    gap : 50px}
+#burger {display: none;}
+
+.burger {
+  display: none;
+  font-size: 30px;}
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) 
+{ body{background-color: #ffca4b;}}
+
+@media screen and (min-width: 1280px) and (max-width: 1620px) 
+{ body{background-color: #275fa0;}}
+
+@media screen and (max-width: 1280px) 
+{ body{background-color: #ffffff;}}
+
+/*Job04*/     
+@media screen and (max-width : 767px){  
+    .burger {display: block;}
+    .Baniere {display: none;}
+    #burger:checked ~ .Baniere {display: block;}}/*Checked permet d'acceder au menu*/

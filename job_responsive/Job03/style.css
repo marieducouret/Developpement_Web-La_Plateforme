@@ -1,0 +1,48 @@
+.Baniere{  
+    display : flex;
+    font-family: fantasy;
+    justify-content: space-around;/*Espace sur toute la largeur*/
+    gap : 50px}
+
+div{display: flex;
+    flex-direction: row;/*pour qu'il se dirige à la verticale*/
+    flex-wrap: wrap;/*Permet d'adapter la taille du carré à la taille de l'écran*/
+    justify-content: space-between;
+    gap: 30px;
+    }
+
+#carré{background-color: #88c1d0;
+    width:350px;
+    height: 350px;
+    border : 3px solid black}
+
+p{text-align: center;}
+
+#burger {display: none;}
+
+.burger {
+  display: none;
+  font-size: 30px;}
+
+
+@media screen and (max-width : 767px)
+    { div {
+        display : flex;
+        flex-wrap: wrap;
+        flex-direction : column; 
+        justify-content: space-between;
+        gap : 30px;}
+/*Job04*/        
+    .burger {display: block;}
+    .Baniere {display: none;}
+    #burger:checked ~ .Baniere {display: block;}}/*Checked permet d'acceder au menu*/
+
+
+@media screen and (min-width : 768px) and (max-width : 1599px)
+    {div {
+        display : grid;/*format grid pour pouvoir placer 4 carrés*/
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center; /* Raccourci pour align-items et justify-items */
+        gap : 30px;}}
+        
